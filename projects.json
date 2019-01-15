@@ -1,0 +1,24 @@
+var projectsJson = [{
+  "number": "1",
+  "title": "ClimateConsole",
+  "thumbnail": "img/projects/p1_thumb.jpg",
+  "images": [
+    {"index": "0", "url": "img/projects/p1_1.jpg"},
+    {"index": "1", "url": "img/projects/p1_2.jpg"},
+    {"index": "2", "url": "img/projects/p1_3.jpg"},
+    {"index": "3", "url": "img/projects/p1_4.jpg"},
+    {"index": "4", "url": "img/projects/p1_5.jpg"},
+    {"index": "5", "url": "img/projects/p1_6.jpg"}]
+},
+{
+  "number": "2",
+  "title": "Climate - Drive Diagnostics Screen",
+  "thumbnail": "img/projects/p2_thumb.jpg",
+  "images": {"index": "0", "url": "img/projects/p2_1.jpg"}
+},
+{
+  "number": "3",
+  "title": "Climate - Soil Zone Rasterization Improvements",
+  "thumbnail": "img/projects/p3_thumb.jpg",
+  "images": {"index": "0", "url": "img/projects/p3_1.jpg"}
+}]

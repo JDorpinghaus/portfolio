@@ -19,45 +19,41 @@
       <img src="img/portrait.png" class="img-fluid rounded-circle p-3 border-dark" alt="Responsive image">
       <h2 class="display-3">Jacob Dorpinghaus</h2>
       <h2 class="display-5 p-3">Software Engineer | Entrepreneur</h3>
-        <a href="https://www.linkedin.com/in/jacob-dorpinghaus"><i class="fa fa-linkedin-square fa-3x p-2" aria-hidden="true"></i></a>
-        <a href="mailto:jacob@dorpingha.us"><i class="fa fa-envelope fa-3x p-2" aria-hidden="true"></i></a>
-        <a href="https://github.com/JDorpinghaus"><i class="fa fa-github-square fa-3x p-2" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/jacob-dorpinghaus"><i class="fa fa-linkedin-square fa-3x p-2"></i></a>
+        <a href="https://github.com/JDorpinghaus"><i class="fa fa-github-square fa-3x p-2"></i></a>
+        <a href="mailto:jacob@dorpingha.us"><i class="fa fa-envelope fa-3x p-2"></i></a>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white overflow-hidden" data-toggle="modal" data-target="#projectModal">
-          <img src="img/projects/p1_thumb.jpg" class="img-fluid" alt="Responsive image">
+        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white overflow-hidden" data-toggle="modal" data-target="#projectModal" data-project-title="ClimateConsole" data-project-number="1">
+          <img src="img/projects/p1_thumb.jpg" class="project-thumb img-fluid" alt="Project 1">
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white">
-          <img src="img/projects/p2_thumb.jpg" class="img-fluid w-100" alt="Project 1">
+        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white" data-toggle="modal" data-target="#projectModal" data-project-title="Drive Diagnostics Screen" data-project-number="2">
+          <img src="img/projects/p2_thumb.jpg" class="project-thumb img-fluid w-100" alt="Project 2">
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white">
-          <img src="img/projects/p3_thumb.jpg" class="img-fluid w-100" alt="Project 2">
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white">
-          <img src="img/logo.png" class="img-fluid w-100" alt="Project 3">
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white">
-          <img src="img/logo.png" class="img-fluid w-100" alt="Project 4">
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white">
-          <img src="img/logo.png" class="img-fluid w-100" alt="Project 5">
+        <div class="col-md-4 col-sm-6 col-xs-12 p-0 bg-dark text-center text-white" data-toggle="modal" data-target="#projectModal" data-project-title="Soil Zone Rasterization" data-project-number="3">
+          <img src="img/projects/p3_thumb.jpg" class="project-thumb img-fluid w-100" alt="Project 3">
         </div>
       </div>
 
       <div id="projectModal" class="modal fade">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <h3 class="modal-title" id="exampleModalLabel">Project Title</h3>
               <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+            </div>
+            <div id="projectCarousel" class="carousel slide" data-ride="carousel">
             </div>
           </div>
         </div>
       </div>
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script type="text/javascript" src="projects.json"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
